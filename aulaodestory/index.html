@@ -1,1 +1,429 @@
-x
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Aulão de Stories · Alayne Freire</title>
+<meta name="description" content="Faça quem assiste seus stories entender o que você faz e querer te contratar.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&amp;family=Raleway:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet">
+<style>
+:root{--title:'Times New Roman MT Condensed','Times New Roman MT Std Condensed','Instrument Serif','Times New Roman',serif;--apoio:'handsome-pro','Handsome Pro','Handsome',cursive;--body:'Raleway',sans-serif}
+body{margin:0;background:#000000}
+a{color:inherit}
+.pill{transition:transform .2s ease}
+.pill:hover{transform:translateY(-2px)}
+.acc{background:none;border:0;padding:0;margin:0;font:inherit;color:inherit;cursor:pointer;text-align:left;width:100%;display:flex;align-items:center;gap:16px;min-height:44px}
+.acc:focus-visible,a:focus-visible,.arrow:focus-visible{outline:3px solid currentColor;outline-offset:4px}
+.arrow{background:none;cursor:pointer;font:inherit}
+.scroller{scrollbar-width:none;-ms-overflow-style:none}
+.scroller::-webkit-scrollbar{display:none}
+.bg-blur{background:#000000 url(97176881e7d4380482b760f72834e500.jpg) center/cover no-repeat}
+.bg-paper{background:#FAFAFA url(a48ccd367c424520d64915e828750426.jpg) center/cover}
+.reveal-on .rv{opacity:0;transform:translateY(26px);transition:opacity .8s ease,transform .8s cubic-bezier(.2,.7,.2,1)}
+.reveal-on .rv.in{opacity:1;transform:none}
+.sx-pin{height:100vh}
+@supports (height:100svh){.sx-pin{height:100svh}}
+.sx-story,.sx-dor,.sx-ans,.sx-logo,[data-slide]{will-change:transform,opacity}
+.sx-static #inicio{height:auto!important}
+.sx-static .sx-pin{position:relative!important;height:auto!important;flex-direction:column;gap:48px;padding:72px 20px}
+.sx-static .sx-logo{position:relative!important;inset:auto!important}
+.sx-static .sx-story,.sx-static .sx-dor{opacity:1!important}
+
+.sx-static .sx-ans{display:none}
+.sx-p{opacity:0;transform:translateX(100%) scale(.94);transition:transform .6s cubic-bezier(.2,.7,.2,1),opacity .6s ease}
+.sx-p.sx-on{opacity:1;transform:none}
+.sx-p.sx-off{opacity:0;transform:translateX(-100%) scale(.94)}
+.sx-on .sx-dor,.sx-on .sx-l,.sx-on .sx-tag{animation:sxpop .55s cubic-bezier(.2,.7,.2,1) both;animation-delay:calc(var(--i,0) * .45s + .15s)}
+@keyframes sxpop{from{opacity:0;translate:0 18px;scale:.9}to{opacity:1;translate:0 0;scale:1}}
+@media (prefers-reduced-motion:reduce){.sx-p{transition:none}.sx-on .sx-dor,.sx-on .sx-l,.sx-on .sx-tag{animation:none}}
+.dp-t{overflow:hidden;white-space:nowrap;text-overflow:ellipsis}
+.dp-b.open .dp-t{white-space:normal;max-height:220px;overflow:auto}
+.dp-b{transition:transform .35s cubic-bezier(.2,.7,.2,1),opacity .35s ease}
+.dp-b.out{opacity:0;transform:translateY(-14px)}
+.dp-b.in0{opacity:0;transform:translateY(14px);transition:none}
+.dp-av img{transition:opacity .4s ease}
+@media (prefers-reduced-motion:reduce){.dp-b,.dp-av img{transition:none}}
+.marquee{display:flex;width:max-content;animation:mq 28s linear infinite}
+@keyframes mq{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+@media (prefers-reduced-motion:reduce){.marquee{animation:none}.pill{transition:none}}
+@media (max-width:767px){
+.two-col{grid-template-columns:minmax(0,1fr)!important}
+}
+.ic-open,.acc-body{display:none}
+.acc-open .ic-open{display:inline}
+.acc-open .ic-closed{display:none}
+.acc-open .acc-body{display:block}
+</style>
+</head>
+<body>
+<div id="root" style="width: 100%; background: #000000; color: #ffffff; font-family: var(--body); overflow-x: clip;">
+
+<section id="inicio" style="position: relative; background: #000000; padding: clamp(40px,7vw,72px) 20px clamp(64px,9vw,104px); overflow: hidden;">
+<div style="max-width: 900px; margin: 0 auto; display: flex; flex-direction: column; align-items: center; text-align: center;">
+<img src="a4e047d96d80bfb673700819d0bbb997.png" alt="Como postar no Story, por Alayne Freire" style="display: block; height: clamp(56px,8vw,84px); width: auto;">
+<h1 style="margin: clamp(24px,4vw,40px) 0 0; max-width: 760px; font-family: var(--title); font-weight: 400; font-size: clamp(38px,5.6vw,68px); line-height: 1; color: #ffffff;">Faça quem assiste seus stories <strong style="font-weight: 700;">entender</strong> o que você faz e <strong style="font-weight: 700;">querer te contratar!</strong></h1>
+<a href="#inscricao" class="pill" style="margin-top: clamp(28px,4vw,40px); display: inline-flex; align-items: center; justify-content: center; padding: 18px clamp(20px,4vw,34px); border-radius: 999px; background: #ffffff; color: #000000; font-weight: 500; font-size: clamp(13px,1.6vw,17px); white-space: nowrap; letter-spacing: .02em; text-transform: uppercase; text-decoration: none;">Quero saber como postar nos stories</a>
+
+<div style="position: relative; margin-top: clamp(88px,14vw,160px);">
+<img src="145eeb521f7116ea4ca802a01a3c9dae.png" alt="" aria-hidden="true" style="position: absolute; z-index: 0; top: -6%; right: -55%; width: 95%; height: auto; opacity: .35; filter: blur(3px); pointer-events: none;">
+<img src="145eeb521f7116ea4ca802a01a3c9dae.png" alt="" aria-hidden="true" style="position: absolute; z-index: 2; bottom: 40px; left: -24%; width: 38%; height: auto; transform: rotate(18deg); pointer-events: none;">
+<div class="sx-story" role="group" aria-label="Stories de exemplo. Toque para passar." style="position: relative; z-index: 1; --u: calc(min(76vw, 340px) / 360); width: calc(360 * var(--u)); aspect-ratio: 9 / 19.5; padding: calc(11 * var(--u)); box-sizing: border-box; background: #0b0b0b; border-radius: calc(56 * var(--u)); border: calc(2 * var(--u)) solid #3a3a3a; box-shadow: 0 0 0 1px #000, inset 0 0 0 calc(2 * var(--u)) #1a1a1a, 0 calc(40 * var(--u)) calc(100 * var(--u)) rgba(255,255,255,.06); cursor: pointer; text-align: left;">
+<span aria-hidden="true" style="position: absolute; left: -4px; top: 18%; width: 3px; height: calc(34 * var(--u)); background: #2a2a2a; border-radius: 2px 0 0 2px;"></span>
+<span aria-hidden="true" style="position: absolute; left: -4px; top: 26%; width: 3px; height: calc(58 * var(--u)); background: #2a2a2a; border-radius: 2px 0 0 2px;"></span>
+<span aria-hidden="true" style="position: absolute; right: -4px; top: 28%; width: 3px; height: calc(88 * var(--u)); background: #2a2a2a; border-radius: 0 2px 2px 0;"></span>
+<div style="position: relative; width: 100%; height: 100%; border-radius: calc(45 * var(--u)); overflow: hidden; background: #1c1c1c url(97176881e7d4380482b760f72834e500.jpg) center/cover;">
+<span aria-hidden="true" style="position: absolute; z-index: 5; top: calc(10 * var(--u)); left: 50%; width: 32%; height: calc(28 * var(--u)); margin-left: -16%; background: #000; border-radius: calc(20 * var(--u));"></span>
+<div aria-hidden="true" style="position: absolute; inset: 0; background: linear-gradient(rgba(0,0,0,.55), rgba(0,0,0,0) 22%, rgba(0,0,0,0) 78%, rgba(0,0,0,.6));"></div>
+<div aria-hidden="true" style="position: absolute; z-index: 4; top: 0; left: 0; right: 0; padding: calc(48 * var(--u)) calc(14 * var(--u)) 0; display: flex; gap: calc(4 * var(--u));"><span style="flex: 1; height: calc(3 * var(--u)); background: rgba(255,255,255,.35); border-radius: 3px; overflow: hidden;"><span class="sx-bar" style="display: block; height: 100%; width: 0; background: #ffffff;"></span></span><span style="flex: 1; height: calc(3 * var(--u)); background: rgba(255,255,255,.35); border-radius: 3px; overflow: hidden;"><span class="sx-bar" style="display: block; height: 100%; width: 0; background: #ffffff;"></span></span></div>
+<div aria-hidden="true" style="position: absolute; z-index: 4; top: calc(62 * var(--u)); left: 0; right: 0; padding: 0 calc(16 * var(--u)); display: flex; align-items: center; gap: calc(10 * var(--u));">
+<img src="41bcd46598a2c3a19bfbaabe3bf05ba8.jpg" alt="" style="width: calc(32 * var(--u)); height: calc(32 * var(--u)); border-radius: 50%; object-fit: cover; object-position: 50% 30%; border: 1.5px solid #ffffff;">
+<span style="font-size: calc(14 * var(--u)); font-weight: 700; color: #ffffff;">socialayne</span><span style="font-size: calc(13 * var(--u)); color: #eaeaea;">agora</span>
+<span style="flex: 1;"></span>
+<svg style="width: calc(20 * var(--u)); height: calc(20 * var(--u));" viewBox="0 0 24 24" fill="#ffffff"><circle cx="5" cy="12" r="1.8"></circle><circle cx="12" cy="12" r="1.8"></circle><circle cx="19" cy="12" r="1.8"></circle></svg>
+<svg style="width: calc(22 * var(--u)); height: calc(22 * var(--u));" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"></path></svg>
+</div>
+<div class="sx-p sx-on" style="position: absolute; top: calc(104 * var(--u)); bottom: calc(84 * var(--u)); left: 0; right: 0; display: flex; flex-direction: column; justify-content: center; gap: calc(14 * var(--u)); padding: 0 calc(16 * var(--u));">
+<p class="sx-tag" style="margin: 0 0 calc(6 * var(--u)); align-self: center; background: #111111; color: #ffffff; padding: calc(6 * var(--u)) calc(16 * var(--u)); border-radius: calc(12 * var(--u)); font-family: var(--apoio); font-size: calc(24 * var(--u)); line-height: 1.2;">Se você já pensou…</p>
+<p class="sx-dor" style="--i: 1; --r: -3deg; margin: 0; align-self: flex-start; max-width: 86%; background: #FAFAFA; color: #101010; padding: calc(9 * var(--u)) calc(14 * var(--u)); border-radius: calc(6 * var(--u)); font-family: var(--title); font-size: calc(19 * var(--u)); line-height: 1.1; text-align: center; box-shadow: 0 calc(10 * var(--u)) calc(26 * var(--u)) rgba(0,0,0,.45); transform: rotate(var(--r));">“Ninguém assiste meus stories.”</p>
+<p class="sx-dor" style="--i: 2; --r: 2deg; margin: 0; align-self: flex-end; max-width: 86%; background: #FAFAFA; color: #101010; padding: calc(9 * var(--u)) calc(14 * var(--u)); border-radius: calc(6 * var(--u)); font-family: var(--title); font-size: calc(19 * var(--u)); line-height: 1.1; text-align: center; box-shadow: 0 calc(10 * var(--u)) calc(26 * var(--u)) rgba(0,0,0,.45); transform: rotate(var(--r));">“As pessoas não se interessam pelo que eu falo.”</p>
+<p class="sx-dor" style="--i: 3; --r: -2deg; margin: 0; align-self: flex-start; max-width: 86%; background: #FAFAFA; color: #101010; padding: calc(9 * var(--u)) calc(14 * var(--u)); border-radius: calc(6 * var(--u)); font-family: var(--title); font-size: calc(19 * var(--u)); line-height: 1.1; text-align: center; box-shadow: 0 calc(10 * var(--u)) calc(26 * var(--u)) rgba(0,0,0,.45); transform: rotate(var(--r));">“As pessoas não interagem.”</p>
+<p class="sx-dor" style="--i: 4; --r: 1.5deg; margin: 0; align-self: flex-end; max-width: 86%; background: #FAFAFA; color: #101010; padding: calc(9 * var(--u)) calc(14 * var(--u)); border-radius: calc(6 * var(--u)); font-family: var(--title); font-size: calc(19 * var(--u)); line-height: 1.1; text-align: center; box-shadow: 0 calc(10 * var(--u)) calc(26 * var(--u)) rgba(0,0,0,.45); transform: rotate(var(--r));">“Meu cliente ideal não está no meu perfil, só tem família.”</p>
+</div>
+<div class="sx-p" style="position: absolute; top: calc(104 * var(--u)); bottom: calc(84 * var(--u)); left: calc(22 * var(--u)); right: calc(22 * var(--u)); display: flex; flex-direction: column; justify-content: center; gap: calc(18 * var(--u)); text-align: center;">
+<p class="sx-l" style="--i: 1; margin: 0; font-family: var(--title); font-size: calc(30 * var(--u)); line-height: 1.08; color: #ffffff;">Você precisa saber<br>que o problema<br>não são as pessoas</p>
+<p class="sx-l" style="--i: 2; margin: 0; font-family: var(--title); font-weight: 700; font-size: calc(31 * var(--u)); line-height: 1; letter-spacing: .01em; text-transform: uppercase; white-space: nowrap; color: #ffffff;">É você mesmo 🫵</p>
+<p class="sx-l" style="--i: 3; margin: 0; align-self: center; background: #FAFAFA; color: #101010; padding: calc(10 * var(--u)) calc(14 * var(--u)); border-radius: calc(6 * var(--u)); font-family: var(--title); font-size: calc(20 * var(--u)); line-height: 1.12; transform: rotate(-2deg);">Elas não interagem pq vc não tá sendo interessante suficiente 🤷🏻‍♀️</p>
+</div>
+<div aria-hidden="true" style="position: absolute; z-index: 4; bottom: calc(26 * var(--u)); left: calc(16 * var(--u)); right: calc(16 * var(--u)); display: flex; align-items: center; gap: calc(14 * var(--u));">
+<span style="flex: 1; padding: calc(11 * var(--u)) calc(16 * var(--u)); border: 1px solid rgba(255,255,255,.6); border-radius: 999px; font-size: calc(14 * var(--u)); color: #ffffff;">Enviar mensagem...</span>
+<svg style="width: calc(24 * var(--u)); height: calc(24 * var(--u));" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="1.8" stroke-linejoin="round"><path d="M12 20s-7-4.4-7-10a4 4 0 0 1 7-2.6A4 4 0 0 1 19 10c0 5.6-7 10-7 10z"></path></svg>
+<svg style="width: calc(24 * var(--u)); height: calc(24 * var(--u));" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="1.8" stroke-linejoin="round"><path d="M22 3 9.2 10.1"></path><path d="M22 3H2l7.2 7.1 2.5 10.2z"></path></svg>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<div style="background: #2b2b2b; color: #ffffff; overflow: hidden; padding: 18px 0;">
+<p class="marquee" style="margin: 0; font-size: 15px; font-weight: 700; letter-spacing: .14em; text-transform: uppercase;">
+<span style="padding: 0 28px; white-space: nowrap;">aprenda a postar nos stories</span><span aria-hidden="true">✱</span><span style="padding: 0 28px; white-space: nowrap;">aprenda a postar nos stories</span><span aria-hidden="true">✱</span><span style="padding: 0 28px; white-space: nowrap;">aprenda a postar nos stories</span><span aria-hidden="true">✱</span><span style="padding: 0 28px; white-space: nowrap;">aprenda a postar nos stories</span><span aria-hidden="true">✱</span><span style="padding: 0 28px; white-space: nowrap;">aprenda a postar nos stories</span><span aria-hidden="true">✱</span><span style="padding: 0 28px; white-space: nowrap;">aprenda a postar nos stories</span><span aria-hidden="true">✱</span>
+<span aria-hidden="true" style="padding: 0 28px; white-space: nowrap;">aprenda a postar nos stories</span><span aria-hidden="true">✱</span><span aria-hidden="true" style="padding: 0 28px; white-space: nowrap;">aprenda a postar nos stories</span><span aria-hidden="true">✱</span><span aria-hidden="true" style="padding: 0 28px; white-space: nowrap;">aprenda a postar nos stories</span><span aria-hidden="true">✱</span><span aria-hidden="true" style="padding: 0 28px; white-space: nowrap;">aprenda a postar nos stories</span><span aria-hidden="true">✱</span><span aria-hidden="true" style="padding: 0 28px; white-space: nowrap;">aprenda a postar nos stories</span><span aria-hidden="true">✱</span><span aria-hidden="true" style="padding: 0 28px; white-space: nowrap;">aprenda a postar nos stories</span><span aria-hidden="true">✱</span>
+</p>
+</div>
+
+<section id="dor" style="background: #FAFAFA; padding: clamp(56px,8vw,96px) 20px 0;">
+<div style="max-width: 880px; margin: 0 auto; background: #000000; border-radius: 36px; padding: clamp(40px,6vw,72px) clamp(20px,5vw,64px); text-align: center;">
+<h2 data-slide="r" style="margin: 0; font-family: var(--title); font-weight: 400; font-size: clamp(40px,5.6vw,72px); line-height: 1; color: #ffffff;">Story <span style="font-family: var(--apoio); font-size: 1.1em;">nunca</span> vai funcionar se a pessoa (você) que postou não for <span style="font-family: var(--apoio); font-size: 1.1em;">interessante</span></h2>
+
+<p style="margin: 36px auto 0; max-width: 600px; color: #eaeaea; font-size: 17px; line-height: 1.65;">Pra ser interessante e vender, é preciso equilibrar duas coisas: o seu trabalho e o interesse do público. Só falar do trabalho não gera interesse; só falar do que interessa não vende. Os dois andam de mãos dadas.</p>
+<ul style="list-style: none; margin: 32px auto 0; padding: 0; max-width: 460px; text-align: left;">
+<li style="display: flex; align-items: center; gap: 16px; padding: 14px 0; border-bottom: 1px solid rgba(234,234,234,.15);"><span aria-hidden="true" style="flex: none; width: 38px; height: 38px; border-radius: 50%; border: 1px solid rgba(234,234,234,.3); display: flex; align-items: center; justify-content: center;"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5 9-10"></path></svg></span><span style="font-size: 17px; color: #ffffff;">Sem precisar expor a sua vida</span></li>
+<li style="display: flex; align-items: center; gap: 16px; padding: 14px 0; border-bottom: 1px solid rgba(234,234,234,.15);"><span aria-hidden="true" style="flex: none; width: 38px; height: 38px; border-radius: 50%; border: 1px solid rgba(234,234,234,.3); display: flex; align-items: center; justify-content: center;"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5 9-10"></path></svg></span><span style="font-size: 17px; color: #ffffff;">Sem ficar chata de acompanhar</span></li>
+<li style="display: flex; align-items: center; gap: 16px; padding: 14px 0;"><span aria-hidden="true" style="flex: none; width: 38px; height: 38px; border-radius: 50%; border: 1px solid rgba(234,234,234,.3); display: flex; align-items: center; justify-content: center;"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5 9-10"></path></svg></span><span style="font-size: 17px; color: #ffffff;">Sem depender de inspiração pra postar</span></li>
+</ul>
+</div>
+</section>
+<div style="background: linear-gradient(#FAFAFA 60px, #000000 60px); text-align: center; padding: 28px 20px 0;">
+<a href="#inscricao" class="pill" style="display: inline-flex; align-items: center; gap: 14px; padding: 20px 34px; border-radius: 999px; background: #FAFAFA; color: #101010; border: 1px solid #101010; font-weight: 700; font-size: 17px; text-decoration: none;">Quero o meu aulão <svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#101010" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 3 9.2 10.1"></path><path d="M22 3H2l7.2 7.1 2.5 10.2z"></path></svg></a>
+</div>
+
+
+<section id="aprender" style="padding: clamp(72px,10vw,128px) 20px clamp(64px,9vw,112px);">
+<div style="max-width: 720px; margin: 0 auto;">
+<h2 data-slide="r" style="margin: 0; text-align: center; font-family: var(--title); font-weight: 400; font-size: clamp(36px,4.8vw,60px); line-height: 1.02; color: #ffffff;">Se você não sabe gerar desejo pelo seu serviço, você não sabe postar no story</h2>
+<p style="margin: 24px auto 0; max-width: 620px; text-align: center; color: #eaeaea; font-size: 18px; line-height: 1.65;">Eu vou te ensinar a identificar como o seu serviço funciona e a usar isso a seu favor na hora de montar o seu story.</p>
+<div style="margin-top: 40px; display: flex; flex-direction: column; gap: 12px;">
+<div style="border: 1px solid rgba(234,234,234,.18); background: #161616; border-radius: 24px; padding: 14px 22px;">
+<button type="button" class="acc" data-act="toggleA1" aria-expanded="false">
+<span aria-hidden="true" style="flex: none; width: 44px; height: 44px; border-radius: 50%; background: #232323; display: flex; align-items: center; justify-content: center;"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#eaeaea" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="4"></circle><path d="M4 21c0-4 4-6 8-6s8 2 8 6"></path></svg></span>
+<span style="flex: 1; font-size: 18px; font-weight: 700; color: #ffffff;">Mostrar quem você é sem expor a vida</span>
+<svg class="ic-open" aria-hidden="true" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round"><path d="M5 12h14"></path></svg>
+<svg class="ic-closed" aria-hidden="true" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round"><path d="M12 5v14M5 12h14"></path></svg>
+</button>
+<p class="acc-body" style="margin: 12px 0 8px 60px; color: #eaeaea; font-size: 16px; line-height: 1.6;">Você não precisa virar blogueira pra ter um perfil com cara de gente. Vou te mostrar como olhar pro seu dia, achar o que vale postar e colocar sua personalidade no que você já faz.</p>
+</div>
+<div style="border: 1px solid rgba(234,234,234,.18); background: #161616; border-radius: 24px; padding: 14px 22px;">
+<button type="button" class="acc" data-act="toggleA2" aria-expanded="false">
+<span aria-hidden="true" style="flex: none; width: 44px; height: 44px; border-radius: 50%; background: #232323; display: flex; align-items: center; justify-content: center;"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#eaeaea" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="16" rx="2"></rect><path d="M3 10h18M8 3v4M16 3v4"></path></svg></span>
+<span style="flex: 1; font-size: 18px; font-weight: 700; color: #ffffff;">Postar sem depender de inspiração</span>
+<svg class="ic-open" aria-hidden="true" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round"><path d="M5 12h14"></path></svg>
+<svg class="ic-closed" aria-hidden="true" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round"><path d="M12 5v14M5 12h14"></path></svg>
+</button>
+<p class="acc-body" style="margin: 12px 0 8px 60px; color: #eaeaea; font-size: 16px; line-height: 1.6;">Story entra na sua rotina em vez de virar mais uma tarefa. Você vai aprender a montar um cronograma de stories e entender quando ele funciona, pra ter o que postar até nos dias sem ideia.</p>
+</div>
+<div style="border: 1px solid rgba(234,234,234,.18); background: #161616; border-radius: 24px; padding: 14px 22px;">
+<button type="button" class="acc" data-act="toggleA3" aria-expanded="false">
+<span aria-hidden="true" style="flex: none; width: 44px; height: 44px; border-radius: 50%; background: #232323; display: flex; align-items: center; justify-content: center;"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#eaeaea" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.5 8.5 0 0 1-12.4 7.6L3 21l1.9-5.6A8.5 8.5 0 1 1 21 11.5z"></path></svg></span>
+<span style="flex: 1; font-size: 18px; font-weight: 700; color: #ffffff;">Vender sem ficar chata de acompanhar</span>
+<svg class="ic-open" aria-hidden="true" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round"><path d="M5 12h14"></path></svg>
+<svg class="ic-closed" aria-hidden="true" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round"><path d="M12 5v14M5 12h14"></path></svg>
+</button>
+<p class="acc-body" style="margin: 12px 0 8px 60px; color: #eaeaea; font-size: 16px; line-height: 1.6;">Sem forçar venda e sem gatilho que não tem nada a ver com você. Você vai aprender a juntar o seu trabalho com o que interessa pra quem assiste, pra pessoa entender o valor do que você faz e te chamar pra comprar.</p>
+</div>
+</div>
+</div>
+</section>
+
+<section id="modulos" class="bg-paper" style="position: relative; color: #101010; padding: clamp(64px,9vw,112px) 20px;">
+<img src="170fb22474af77b251789789374c40fe.png" alt="" aria-hidden="true" style="position: absolute; z-index: 2; top: clamp(-80px,-7vw,-56px); left: clamp(-80px,-5vw,-45px); width: clamp(120px,14vw,180px); height: auto; transform: rotate(-14deg); pointer-events: none;">
+<div style="max-width: 720px; margin: 0 auto; text-align: center;">
+<p style="margin: 0; font-family: var(--apoio); font-size: 30px; color: #101010;">teoria + prática</p>
+<h2 data-slide="r" style="margin: 4px 0 0; font-family: var(--title); font-weight: 400; font-size: clamp(42px,5.6vw,72px); line-height: 1; color: #101010;">O que você vai entender</h2>
+<ol style="list-style: none; margin: 40px 0 0; padding: 0; display: flex; flex-direction: column; gap: 10px; text-align: left;">
+<li style="display: flex; align-items: center; gap: 18px; padding: 16px 22px; background: #ffffff; border: 1px solid #eaeaea; border-radius: 22px;"><span style="flex: none; width: 44px; height: 44px; border-radius: 50%; background: #000000; color: #ffffff; display: flex; align-items: center; justify-content: center; font-family: var(--title); font-size: 22px;">1</span><span style="font-size: 17px; font-weight: 700;">O que REALMENTE é o Story?</span></li>
+<li style="display: flex; align-items: center; gap: 18px; padding: 16px 22px; background: #ffffff; border: 1px solid #eaeaea; border-radius: 22px;"><span style="flex: none; width: 44px; height: 44px; border-radius: 50%; background: #000000; color: #ffffff; display: flex; align-items: center; justify-content: center; font-family: var(--title); font-size: 22px;">2</span><span style="font-size: 17px; font-weight: 700;">Como você quer ser percebida?</span></li>
+<li style="display: flex; align-items: center; gap: 18px; padding: 16px 22px; background: #ffffff; border: 1px solid #eaeaea; border-radius: 22px;"><span style="flex: none; width: 44px; height: 44px; border-radius: 50%; background: #000000; color: #ffffff; display: flex; align-items: center; justify-content: center; font-family: var(--title); font-size: 22px;">3</span><span style="font-size: 17px; font-weight: 700;">Como seu trabalho pode ser desejável?</span></li>
+<li style="display: flex; align-items: center; gap: 18px; padding: 16px 22px; background: #ffffff; border: 1px solid #eaeaea; border-radius: 22px;"><span style="flex: none; width: 44px; height: 44px; border-radius: 50%; background: #000000; color: #ffffff; display: flex; align-items: center; justify-content: center; font-family: var(--title); font-size: 22px;">4</span><span style="font-size: 17px; font-weight: 700;">O que você pode mostrar?</span></li>
+<li style="display: flex; align-items: center; gap: 18px; padding: 16px 22px; background: #ffffff; border: 1px solid #eaeaea; border-radius: 22px;"><span style="flex: none; width: 44px; height: 44px; border-radius: 50%; background: #000000; color: #ffffff; display: flex; align-items: center; justify-content: center; font-family: var(--title); font-size: 22px;">5</span><span style="font-size: 17px; font-weight: 700;">Como postar?</span></li>
+<li style="display: flex; align-items: center; gap: 18px; padding: 16px 22px; background: #ffffff; border: 1px solid #eaeaea; border-radius: 22px;"><span style="flex: none; width: 44px; height: 44px; border-radius: 50%; background: #000000; color: #ffffff; display: flex; align-items: center; justify-content: center; font-family: var(--title); font-size: 22px;">6</span><span style="font-size: 17px; font-weight: 700;">Como trazer o público pra conversa</span></li>
+<li style="display: flex; align-items: center; gap: 18px; padding: 16px 22px; background: #ffffff; border: 1px solid #eaeaea; border-radius: 22px;"><span style="flex: none; width: 44px; height: 44px; border-radius: 50%; background: #000000; color: #ffffff; display: flex; align-items: center; justify-content: center; font-family: var(--title); font-size: 22px;">7</span><span style="font-size: 17px; font-weight: 700;">Cronograma de Stories funciona?</span></li>
+</ol>
+</div>
+</section>
+
+<section id="recebe" class="bg-blur" style="padding: clamp(64px,9vw,112px) 0;">
+<div style="max-width: 1100px; margin: 0 auto;">
+<h2 data-slide="r" style="margin: 0; padding: 0 20px; text-align: center; font-family: var(--title); font-weight: 400; font-size: clamp(42px,5.6vw,72px); line-height: 1; color: #ffffff;">O que você vai receber?</h2>
+<div class="scroller" id="scroller" style="margin-top: 40px; display: flex; gap: 16px; overflow-x: auto; overflow-y: hidden; overscroll-behavior-x: contain; touch-action: pan-x pan-y; scroll-snap-type: x mandatory; padding: 0 20px 8px; scroll-padding: 0 20px;">
+<article style="flex: 0 0 min(82%, 340px); scroll-snap-align: start; background: #161616; border: 1px solid rgba(234,234,234,.16); border-radius: 28px; padding: 24px; box-sizing: border-box;">
+<h3 style="margin: 0; font-family: var(--title); font-weight: 400; font-size: 34px; color: #ffffff;">Gravação do aulão</h3>
+<p style="margin: 10px 0 0; padding-top: 14px; border-top: 1px solid rgba(234,234,234,.14); color: #eaeaea; font-size: 16px; line-height: 1.6;">A aula completa gravada, pra você assistir no seu tempo e voltar nos trechos que quiser.</p>
+</article>
+<article style="flex: 0 0 min(82%, 340px); scroll-snap-align: start; background: #161616; border: 1px solid rgba(234,234,234,.16); border-radius: 28px; padding: 24px; box-sizing: border-box;">
+<h3 style="margin: 0; font-family: var(--title); font-weight: 400; font-size: 34px; color: #ffffff;">PDF do aulão</h3>
+<p style="margin: 10px 0 0; padding-top: 14px; border-top: 1px solid rgba(234,234,234,.14); color: #eaeaea; font-size: 16px; line-height: 1.6;">Os slides da aula, pra consultar o conteúdo sem precisar rever o vídeo.</p>
+</article>
+<article style="flex: 0 0 min(82%, 340px); scroll-snap-align: start; background: #161616; border: 1px solid rgba(234,234,234,.16); border-radius: 28px; padding: 24px; box-sizing: border-box;">
+<h3 style="margin: 0; font-family: var(--title); font-weight: 400; font-size: 34px; color: #ffffff;">Notion pra aplicar</h3>
+<p style="margin: 10px 0 0; padding-top: 14px; border-top: 1px solid rgba(234,234,234,.14); color: #eaeaea; font-size: 16px; line-height: 1.6;">Um Notion bonitão e completo pra você aplicar tudo junto comigo.</p>
+</article>
+<article style="flex: 0 0 min(82%, 340px); scroll-snap-align: start; background: #161616; border: 1px solid rgba(234,234,234,.16); border-radius: 28px; padding: 24px; box-sizing: border-box;">
+<h3 style="margin: 0; font-family: var(--title); font-weight: 400; font-size: 34px; color: #ffffff;">IA do aulão</h3>
+<p style="margin: 10px 0 0; padding-top: 14px; border-top: 1px solid rgba(234,234,234,.14); color: #eaeaea; font-size: 16px; line-height: 1.6;">IA treinada com o conteúdo desse aulão pra você poder tirar dúvidas e usar no dia a dia.</p>
+</article>
+</div>
+<div style="margin: 28px auto 0; padding: 0 20px; max-width: 420px; display: flex; align-items: center; gap: 16px;">
+<button type="button" class="arrow" data-act="prev" aria-label="Card anterior" style="flex: none; width: 44px; height: 44px; border-radius: 50%; border: 1px solid rgba(234,234,234,.3); color: #ffffff; display: flex; align-items: center; justify-content: center; padding: 0;"><svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5M11 6l-6 6 6 6"></path></svg></button>
+<div aria-hidden="true" style="flex: 1; height: 4px; background: #2a2a2a; border-radius: 4px; overflow: hidden;"><div id="bar" style="height: 100%; width: 34%; background: #FAFAFA; border-radius: 4px; margin-left: 0%; transition: margin-left .15s linear;"></div></div>
+<button type="button" class="arrow" data-act="next" aria-label="Próximo card" style="flex: none; width: 44px; height: 44px; border-radius: 50%; border: 1px solid rgba(234,234,234,.3); color: #ffffff; display: flex; align-items: center; justify-content: center; padding: 0;"><svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"></path></svg></button>
+</div>
+</div>
+</section>
+
+<section id="alayne" style="background: #000000; color: #ffffff; padding: clamp(64px,9vw,112px) 20px;">
+<div style="max-width: 460px; margin: 0 auto; text-align: center;">
+<img src="2d047cd9a8ce98c9460b72223f853399.jpg" alt="Quem vai te ensinar: Alayne Freire. Sou uma publicitária. Pós-graduada em neurocomunicação. Há mais de 6 anos na comunicação. A-MO marketing de conteúdo." style="display: block; width: 100%; height: auto; border-radius: 24px;">
+<p style="margin: 20px 0 0; font-size: 16px; font-weight: 700;">@socialayne</p>
+</div>
+</section>
+
+<section id="depoimentos" style="padding: clamp(64px,9vw,112px) 0;">
+<div style="max-width: 1100px; margin: 0 auto;">
+<h2 data-slide="r" style="margin: 0; padding: 0 20px; text-align: center; font-family: var(--title); font-weight: 400; font-size: clamp(42px,5.6vw,72px); line-height: 1; color: #ffffff;">Quem já <span style="font-family: var(--apoio); font-size: 1.1em;">assistiu</span></h2>
+<div class="dp" style="position: relative; width: calc(100% - 40px); max-width: 400px; margin: 40px auto 0; padding: 18px 14px 16px; box-sizing: border-box; border-radius: 28px; overflow: hidden; background: #1c1c1c url(97176881e7d4380482b760f72834e500.jpg) center/cover; border: 1px solid rgba(234,234,234,.12);">
+<div aria-hidden="true" style="position: absolute; inset: 0; background: rgba(0,0,0,.45);"></div>
+<div style="position: relative; display: flex; align-items: flex-end; gap: 10px;">
+<div class="dp-av" aria-hidden="true" style="position: relative; flex: none; width: 50px; height: 46px;">
+<img class="dp-a3" src="data:image/gif;base64,R0lGODlhAQABAAAAACw=" alt="" style="position: absolute; left: 22px; top: 0; width: 22px; height: 22px; border-radius: 50%; object-fit: cover; opacity: .9;">
+<img class="dp-a2" src="data:image/gif;base64,R0lGODlhAQABAAAAACw=" alt="" style="position: absolute; left: 0; top: 8px; width: 24px; height: 24px; border-radius: 50%; object-fit: cover;">
+<img class="dp-a1" src="data:image/gif;base64,R0lGODlhAQABAAAAACw=" alt="" style="position: absolute; left: 14px; top: 14px; width: 32px; height: 32px; border-radius: 50%; object-fit: cover; border: 2px solid rgba(0,0,0,.4);">
+</div>
+<button type="button" class="dp-b" aria-expanded="false" style="flex: 1; min-width: 0; text-align: left; background: rgba(255,255,255,.95); color: #101010; border: 0; border-radius: 20px; padding: 10px 14px; font: inherit; font-size: 14px; line-height: 1.35; cursor: pointer;">
+<span class="dp-n" style="display: block; font-size: 12px; font-weight: 700; opacity: .65;">Laura Torelli</span>
+<span class="dp-t" style="display: block;">Melhor aulao de stories q já participei!!!</span>
+</button>
+</div>
+<div aria-hidden="true" style="position: relative; margin-top: 16px; display: flex; align-items: center; gap: 14px;">
+<span style="flex: 1; padding: 11px 16px; border: 1px solid rgba(255,255,255,.6); border-radius: 999px; font-size: 14px; color: #ffffff;">Enviar mensagem...</span>
+<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="1.8" stroke-linejoin="round"><path d="M12 20s-7-4.4-7-10a4 4 0 0 1 7-2.6A4 4 0 0 1 19 10c0 5.6-7 10-7 10z"></path></svg>
+<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="1.8" stroke-linejoin="round"><path d="M21 11.5a8.5 8.5 0 0 1-12.4 7.6L3 21l1.9-5.6A8.5 8.5 0 1 1 21 11.5z"></path></svg>
+<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="1.8" stroke-linejoin="round"><path d="M22 3 9.2 10.1"></path><path d="M22 3H2l7.2 7.1 2.5 10.2z"></path></svg>
+</div>
+<ul style="position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); margin: 0; padding: 0;">
+<li>Laura Torelli: Melhor aulao de stories q já participei!!!</li>
+<li>Cristy Ellen Ribeiro: Obrigada Alayne, esclareceu demais e a ferramenta vai me ajudar demaais</li>
+<li>Yasmin Miranda: Eu amei :) Vai me ajudar bastante, já estou com várias ideias</li>
+<li>Camila Araújo: vou voltar a postar com frequência depois dessa aula</li>
+<li>Ana Laura Guimarães: Vc é muito didática e clara</li>
+<li>Pietra Bertola: Amei amei, muito esclarecedor</li>
+<li>Emi C.: foi mto bom!! mto objetivoo</li>
+<li>Jamille Leonel: eu amei, a melhorr sempre 100</li>
+<li>Tania Fernandes Cordeiro: 1000 ajudou muito</li>
+<li>Anna Digital: vc é maravilhosaaa, obrigada!!</li>
+<li>Laura Torelli: Ajudou demais!!!!</li>
+<li>Larissa Silveira: simmmm, amei!!!</li>
+<li>Ana Laura Guimarães: Foi perfeitoooo</li>
+<li>Camila Araújo: foi perfeito</li>
+</ul>
+</div>
+</div>
+</section>
+
+<section id="faq" style="position: relative; padding: 0 20px clamp(64px,9vw,112px);">
+<img src="170fb22474af77b251789789374c40fe.png" alt="" aria-hidden="true" style="position: absolute; z-index: 0; top: clamp(-120px,-9vw,-80px); right: clamp(-130px,-9vw,-80px); width: clamp(220px,26vw,320px); height: auto; transform: rotate(14deg); filter: blur(3px); opacity: .45; pointer-events: none;">
+<div style="max-width: 720px; margin: 0 auto; position: relative; z-index: 1;">
+<h2 data-slide="r" style="margin: 0; text-align: center; font-family: var(--title); font-weight: 400; font-size: clamp(42px,5.6vw,72px); line-height: 1; color: #ffffff;">Ficou alguma dúvida?</h2>
+<div style="margin-top: 40px; display: flex; flex-direction: column; gap: 12px;">
+<div style="border: 1px solid rgba(234,234,234,.18); background: #161616; border-radius: 24px; padding: 14px 22px;">
+<button type="button" class="acc" data-act="toggleF1" aria-expanded="false">
+<img src="145eeb521f7116ea4ca802a01a3c9dae.png" alt="" aria-hidden="true" style="flex: none; width: 36px; height: 36px; object-fit: contain;">
+<span style="flex: 1; font-size: 18px; font-weight: 700; color: #ffffff;">Como funciona?</span>
+<svg class="ic-open" aria-hidden="true" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round"><path d="M5 12h14"></path></svg>
+<svg class="ic-closed" aria-hidden="true" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round"><path d="M12 5v14M5 12h14"></path></svg>
+</button>
+<p class="acc-body" style="margin: 12px 0 8px 52px; color: #eaeaea; font-size: 16px; line-height: 1.6;">É a gravação do aulão, separada em módulos. Você compra, recebe o acesso e assiste quando quiser.</p>
+</div>
+<div style="border: 1px solid rgba(234,234,234,.18); background: #161616; border-radius: 24px; padding: 14px 22px;">
+<button type="button" class="acc" data-act="toggleF2" aria-expanded="false">
+<img src="145eeb521f7116ea4ca802a01a3c9dae.png" alt="" aria-hidden="true" style="flex: none; width: 36px; height: 36px; object-fit: contain;">
+<span style="flex: 1; font-size: 18px; font-weight: 700; color: #ffffff;">O que eu recebo?</span>
+<svg class="ic-open" aria-hidden="true" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round"><path d="M5 12h14"></path></svg>
+<svg class="ic-closed" aria-hidden="true" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round"><path d="M12 5v14M5 12h14"></path></svg>
+</button>
+<p class="acc-body" style="margin: 12px 0 8px 52px; color: #eaeaea; font-size: 16px; line-height: 1.6;">A gravação do aulão, o PDF com os slides, um Notion pra aplicar tudo junto com a aula e uma IA treinada por mim pra te ajudar a aplicar no dia a dia o que foi ensinado.</p>
+</div>
+<div style="border: 1px solid rgba(234,234,234,.18); background: #161616; border-radius: 24px; padding: 14px 22px;">
+<button type="button" class="acc" data-act="toggleF3" aria-expanded="false">
+<img src="145eeb521f7116ea4ca802a01a3c9dae.png" alt="" aria-hidden="true" style="flex: none; width: 36px; height: 36px; object-fit: contain;">
+<span style="flex: 1; font-size: 18px; font-weight: 700; color: #ffffff;">Quanto tempo dura?</span>
+<svg class="ic-open" aria-hidden="true" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round"><path d="M5 12h14"></path></svg>
+<svg class="ic-closed" aria-hidden="true" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round"><path d="M12 5v14M5 12h14"></path></svg>
+</button>
+<p class="acc-body" style="margin: 12px 0 8px 52px; color: #eaeaea; font-size: 16px; line-height: 1.6;">O aulão inteiro tem umas 2 horas, mas é dividido em módulos curtinhos, de até 15 minutos. Dá pra assistir rapidinho, como se fosse um story gostoso de assistir. Hihihi</p>
+</div>
+<div style="border: 1px solid rgba(234,234,234,.18); background: #161616; border-radius: 24px; padding: 14px 22px;">
+<button type="button" class="acc" data-act="toggleF4" aria-expanded="false">
+<img src="145eeb521f7116ea4ca802a01a3c9dae.png" alt="" aria-hidden="true" style="flex: none; width: 36px; height: 36px; object-fit: contain;">
+<span style="flex: 1; font-size: 18px; font-weight: 700; color: #ffffff;">Como recebo o acesso?</span>
+<svg class="ic-open" aria-hidden="true" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round"><path d="M5 12h14"></path></svg>
+<svg class="ic-closed" aria-hidden="true" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round"><path d="M12 5v14M5 12h14"></path></svg>
+</button>
+<p class="acc-body" style="margin: 12px 0 8px 52px; color: #eaeaea; font-size: 16px; line-height: 1.6;">Após a confirmação da compra, você recebe as informações de acesso automaticamente no e-mail cadastrado na Kiwify.</p>
+</div>
+</div>
+</div>
+</section>
+
+<section id="inscricao" style="background: #FAFAFA; color: #101010; padding: clamp(64px,9vw,112px) 20px;">
+<div style="max-width: 640px; margin: 0 auto; text-align: center;">
+<h2 data-slide="r" style="margin: 0; font-family: var(--title); font-weight: 400; font-size: clamp(96px,14vw,180px); line-height: .9; color: #101010;">Bora<span style="font-family: var(--apoio);">?</span></h2>
+<p style="margin: 20px auto 0; max-width: 520px; font-size: 18px; line-height: 1.6;">Tá vendo quanta coisa a gente precisa organizar? É isso que a gente vai fazer nessa aula: pegar tudo e colocar cada coisa no seu lugar.</p>
+<div style="margin: 36px auto 0; max-width: 420px; background: #000000; color: #ffffff; border-radius: 32px; padding: 32px 24px;">
+<p style="margin: 0; font-family: var(--apoio); font-size: 28px; color: #eaeaea;">o que você recebe</p>
+<ul style="margin: 16px 0 0; padding: 0; list-style: none; text-align: left; display: flex; flex-direction: column; gap: 10px; font-size: 16px; line-height: 1.4;">
+<li style="display: flex; gap: 10px;"><span aria-hidden="true">✓</span><span>Gravação do aulão dividida em módulos</span></li>
+<li style="display: flex; gap: 10px;"><span aria-hidden="true">✓</span><span>PDF dos slides</span></li>
+<li style="display: flex; gap: 10px;"><span aria-hidden="true">✓</span><span>Notion das atividades pra você aplicar</span></li>
+<li style="display: flex; gap: 10px;"><span aria-hidden="true">✓</span><span>IA treinada com o conteúdo do aulão pra tirar dúvidas e usar no dia a dia</span></li>
+</ul>
+<p style="margin: 22px 0 0; padding-top: 18px; border-top: 1px solid rgba(234,234,234,.18); font-family: var(--title); font-size: 72px; line-height: 1;">R$97</p>
+<a href="#inscricao" class="pill" style="display: flex; align-items: center; justify-content: center; gap: 12px; margin-top: 24px; padding: 18px 24px; border-radius: 999px; background: #FAFAFA; color: #101010; font-weight: 700; font-size: 17px; text-decoration: none;">Quero o meu aulão <svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#101010" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 3 9.2 10.1"></path><path d="M22 3H2l7.2 7.1 2.5 10.2z"></path></svg></a>
+</div>
+</div>
+</section>
+
+<footer style="background: #2b2b2b; padding: 14px 20px; text-align: center;">
+<p style="margin: 0; font-size: 11px; line-height: 1.6; letter-spacing: .04em; color: #eaeaea;">Alayne Freire · @socialayne&nbsp;&nbsp;|&nbsp;&nbsp;Desenvolvido por @emimsouza</p>
+</footer>
+
+</div>
+
+<script>
+(function(){
+var self={};
+(function(){
+    const root = document.getElementById("root");
+    if (!root || typeof window === 'undefined') return;
+    const reduced = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    const story = root.querySelector('.sx-story');
+    if (story) {
+      const panes = Array.prototype.slice.call(story.querySelectorAll('.sx-p'));
+      const bars = Array.prototype.slice.call(story.querySelectorAll('.sx-bar'));
+      const DUR = [7500, 7500];
+      let idx = 0, start = performance.now();
+      const show = (n) => {
+        idx = (n + panes.length) % panes.length; start = performance.now();
+        panes.forEach((p, i) => { p.classList.toggle('sx-on', i === idx); p.classList.toggle('sx-off', i < idx); });
+      };
+      const tick = (now) => {
+        const t = Math.min(1, (now - start) / DUR[idx]);
+        bars.forEach((b, i) => { b.style.width = (i < idx ? 100 : i === idx ? t * 100 : 0) + '%'; });
+        if (t >= 1) show(idx + 1);
+        this.storyRaf = window.requestAnimationFrame(tick);
+      };
+      story.addEventListener('click', () => show(idx + 1));
+      this.storyRaf = window.requestAnimationFrame(tick);
+    }
+    const dp = root.querySelector('.dp');
+    if (dp) {
+      const D = [{"n": "Laura Torelli", "a": "af239c7bc8ab71a13984acf37b9dbff1.png", "t": "Melhor aulao de stories q já participei!!!"}, {"n": "Cristy Ellen Ribeiro", "a": "5678779ca9333c4b3501e7ca01bbce33.png", "t": "Obrigada Alayne, esclareceu demais e a ferramenta vai me ajudar demaais"}, {"n": "Yasmin Miranda", "a": "ee23ca6abf8baaa0afed1320383df9c9.png", "t": "Eu amei :) Vai me ajudar bastante, já estou com várias ideias"}, {"n": "Camila Araújo", "a": "1a94f05178fe1aa5a8edb91c9511bd55.png", "t": "vou voltar a postar com frequência depois dessa aula"}, {"n": "Ana Laura Guimarães", "a": "50b9bf9d0038b70e116cf64003003f3b.png", "t": "Vc é muito didática e clara"}, {"n": "Pietra Bertola", "a": "6ae79fea990e8454387beeb49ae23a73.png", "t": "Amei amei, muito esclarecedor"}, {"n": "Emi C.", "a": "a0bb938ae10a34000e3333a03b475f41.png", "t": "foi mto bom!! mto objetivoo"}, {"n": "Jamille Leonel", "a": "2962c6140f799138d8600b5a9d54a8a3.png", "t": "eu amei, a melhorr sempre 100"}, {"n": "Tania Fernandes Cordeiro", "a": "4dc3c85213dd2a4afe8a20847f1d2027.png", "t": "1000 ajudou muito"}, {"n": "Anna Digital", "a": "9e12a23f7c4d6bf5ef3342589b146967.png", "t": "vc é maravilhosaaa, obrigada!!"}, {"n": "Laura Torelli", "a": "af239c7bc8ab71a13984acf37b9dbff1.png", "t": "Ajudou demais!!!!"}, {"n": "Larissa Silveira", "a": "122cd94ec5beeabecbcdbf6bda416445.png", "t": "simmmm, amei!!!"}, {"n": "Ana Laura Guimarães", "a": "50b9bf9d0038b70e116cf64003003f3b.png", "t": "Foi perfeitoooo"}, {"n": "Camila Araújo", "a": "1a94f05178fe1aa5a8edb91c9511bd55.png", "t": "foi perfeito"}];
+      const b = dp.querySelector('.dp-b'), nm = dp.querySelector('.dp-n'), tx = dp.querySelector('.dp-t');
+      const av = [dp.querySelector('.dp-a1'), dp.querySelector('.dp-a2'), dp.querySelector('.dp-a3')];
+      let k = 0;
+      const paint = () => {
+        const c = D[k];
+        nm.textContent = c.n; tx.textContent = c.t;
+        av[0].src = c.a; av[1].src = D[(k + D.length - 1) % D.length].a; av[2].src = D[(k + D.length - 2) % D.length].a;
+      };
+      const go = () => {
+        if (b.classList.contains('open')) return;
+        b.classList.add('out');
+        setTimeout(() => {
+          k = (k + 1) % D.length; paint();
+          b.classList.remove('out'); b.classList.add('in0');
+          void b.offsetWidth; b.classList.remove('in0');
+        }, 350);
+      };
+      paint();
+      this.dpTimer = setInterval(go, 2800);
+      b.addEventListener('click', () => {
+        const open = b.classList.toggle('open');
+        b.setAttribute('aria-expanded', open ? 'true' : 'false');
+      });
+    }
+    if (reduced) { root.classList.add('sx-static'); return; }
+
+    if ('IntersectionObserver' in window) {
+      const all = root.querySelectorAll('section > div > p, section li, section article, section .two-col > div, #aprender > div > div > div, #faq > div > div > div, footer p');
+      const targets = Array.prototype.filter.call(all, (el) => !el.hasAttribute('data-slide') && !el.closest('#inicio'));
+      root.classList.add('reveal-on');
+      this.io = new IntersectionObserver((entries) => {
+        entries.forEach((en) => {
+          if (en.isIntersecting) { en.target.classList.add('in'); this.io.unobserve(en.target); }
+        });
+      }, { threshold: 0.12, rootMargin: '0px 0px -6% 0px' });
+      targets.forEach((el) => { el.classList.add('rv'); this.io.observe(el); });
+    }
+
+    const clamp = (v) => Math.max(0, Math.min(1, v));
+    const ease = (t) => 1 - Math.pow(1 - t, 3);
+    const slides = Array.prototype.slice.call(root.querySelectorAll('[data-slide]'));
+
+    const update = () => {
+      this.raf = 0;
+      const vh = window.innerHeight || document.documentElement.clientHeight;
+      const span = Math.min(window.innerWidth * 0.5, 420);
+      slides.forEach((el) => {
+        const r = el.getBoundingClientRect();
+        const q = ease(clamp((vh * 0.98 - r.top) / (vh * 0.5)));
+        const dir = el.getAttribute('data-slide') === 'l' ? -1 : 1;
+        el.style.opacity = String(q);
+        el.style.transform = 'translateX(' + (dir * (1 - q) * span) + 'px)';
+      });
+    };
+    this.onAnyScroll = () => { if (!this.raf) this.raf = window.requestAnimationFrame(update); };
+    document.addEventListener('scroll', this.onAnyScroll, true);
+    window.addEventListener('resize', this.onAnyScroll);
+    update();}).call(self);
+document.querySelectorAll('.acc').forEach(function(b){b.addEventListener('click',function(){var o=b.getAttribute('aria-expanded')!=='true';b.setAttribute('aria-expanded',o?'true':'false');b.parentNode.classList.toggle('acc-open',o);});});
+var sc=document.getElementById('scroller'),bar=document.getElementById('bar');
+function step(d){var c=sc.querySelector('article');var w=c?c.getBoundingClientRect().width+16:300;sc.scrollBy({left:d*w,behavior:'smooth'});}
+document.querySelector('[data-act="prev"]').addEventListener('click',function(){step(-1)});
+document.querySelector('[data-act="next"]').addEventListener('click',function(){step(1)});
+sc.addEventListener('scroll',function(){var m=sc.scrollWidth-sc.clientWidth;var p=m>0?sc.scrollLeft/m:0;bar.style.marginLeft=(p*66).toFixed(1)+'%';});
+})();
+</script>
+</body>
+</html>
