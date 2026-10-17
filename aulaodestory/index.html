@@ -409,7 +409,7 @@ var self={};
 
     if ('IntersectionObserver' in window) {
       const all = root.querySelectorAll('section > div > p, section li, section article, section .two-col > div, #aprender > div > div > div, #faq > div > div > div, footer p');
-      const targets = Array.prototype.filter.call(all, (el) => !el.hasAttribute('data-slide') && !el.closest('#inicio'));
+      const targets = Array.prototype.filter.call(all, (el) => !el.hasAttribute('data-slide') && !el.closest('#inicio') && !el.closest('footer'));
       root.classList.add('reveal-on');
       this.io = new IntersectionObserver((entries) => {
         entries.forEach((en) => {
